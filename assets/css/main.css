@@ -31,6 +31,8 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	font-size: 10pt;
+	text-align: justify;
 }
 
 ol, ul {
@@ -1306,7 +1308,10 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
+		background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("images/bg.jpg");
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("images/bg.jpg");
+		background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("images/bg.jpg");
+		background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("images/bg.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		background-attachment: fixed;
@@ -1325,11 +1330,11 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
-		font-family: 'Source Sans Pro', sans-serif;
-		font-weight: 300;
-		color: #777777;
-		font-size: 20pt;
-		line-height: 1.75em;
+		font-family: 'Helvetica', sans-serif;
+		font-weight: 100;
+		color: #393939;
+		font-size: 18pt;
+		line-height: 1.25em;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1364,22 +1369,31 @@ input, select, textarea {
 
 		}
 
-	strong, b, h1, h2, h3, h4, h5, h6 {
-		font-weight: 400;
-		color: #363636;
+	strong, body, h1, h2, h3, h4, h5, h6 {
+		font-weight: 300;
+		color: #777575;
+		letter-spacing: -0.010em;
+	}
+
+	b {
+		font-weight: 550;
 	}
 
 	h1 {
 		font-size: 2.4em;
+		color: #2d2d2d;
 		letter-spacing: -0.015em;
 	}
 
 	h2 {
+		font-weight: 350;
 		font-size: 1.8em;
+		color: #2d2d2d;
 		letter-spacing: -0.015em;
 	}
 
 	h3, h4, h5, h6 {
+		font-weight: 350;
 		font-size: 1.25em;
 		letter-spacing: -0.015em;
 	}
@@ -1732,40 +1746,23 @@ input, select, textarea {
 
 /* Icons */
 
-	.icon {
-		text-decoration: none;
-		position: relative;
-		text-decoration: none;
+.icon {
+	position: relative;
+	text-decoration: none;
+}
+
+	.icon:before {
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+		font-family: FontAwesome;
+		font-style: normal;
+		font-weight: normal;
+		text-transform: none !important;
 	}
 
-		.icon:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			display: inline-block;
-			font-style: normal;
-			font-variant: normal;
-			text-rendering: auto;
-			line-height: 1;
-			text-transform: none !important;
-			font-family: 'Font Awesome 5 Free';
-			font-weight: 400;
-		}
-
-		.icon.solid:before {
-			font-weight: 900;
-		}
-
-		.icon.brands:before {
-			font-family: 'Font Awesome 5 Brands';
-		}
-
-		.icon:before {
-			line-height: inherit;
-		}
-
-		.icon > .label {
-			display: none;
-		}
+	.icon > .label {
+		display: none;
+	}
 
 /* Nav */
 
@@ -1778,13 +1775,16 @@ input, select, textarea {
 		#nav a {
 			position: relative;
 			display: inline-block;
+			padding-right: 15px;
+			padding-left: 15px;
+			margin: 0 auto;
+			float:left;
 			color: #ffffff;
-			width: 1em;
 			height: 1em;
 			line-height: 0.9em;
 			font-size: 2.5em;
-			margin: 0 0.25em 0 0.25em;
-			opacity: 0.35;
+			margin: 0 0.05em 0 0.05em;
+			opacity: 0.45;
 			outline: 0;
 			-moz-transition: opacity .25s ease-in-out;
 			-webkit-transition: opacity .25s ease-in-out;
@@ -1874,7 +1874,7 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
-		width: 45em;
+		width: 60em;
 		margin: 0 auto;
 		min-height: 100vh;
 		max-width: 100%;
@@ -1955,6 +1955,31 @@ input, select, textarea {
 		transition: min-height 0.5s ease-in-out, max-height 0.5s ease-in-out;
 	}
 
+		#main .avatar {
+			position: relative;
+			display: block;
+			margin-bottom: 1.0em;
+		}
+
+			#main .avatar img {
+				display: block;
+				margin: 0 auto;
+				border-radius: 100%;
+				box-shadow: 0 0 0 0.3em #e6e2e2;
+			}
+
+			#main .avatar:before {
+				content: '';
+				display: block;
+				position: absolute;
+				top: 50%;
+				left: -3em;
+				width: calc(100% + 6em);
+				height: 1px;
+				z-index: -1;
+				background: #c8cccf;
+			}
+
 		#main > .panel {
 			-moz-transition: opacity 0.25s ease-in-out;
 			-webkit-transition: opacity 0.25s ease-in-out;
@@ -1980,7 +2005,7 @@ input, select, textarea {
 
 			#main > .panel.intro {
 				padding: 0;
-				height: 20em;
+				height: 28em;
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
@@ -2027,8 +2052,8 @@ input, select, textarea {
 						position: absolute;
 						top: 0;
 						left: 0;
-						width: 100%;
-						height: 100%;
+						width: 50%;
+						height: 50%;
 						-moz-object-fit: cover;
 						-webkit-object-fit: cover;
 						-ms-object-fit: cover;
@@ -2242,3 +2267,45 @@ input, select, textarea {
 	
 
 
+/* Container holding the image and the text */
+.container {
+	position: relative;
+	text-align: left;
+	color: black;
+  }
+  
+  /* Bottom left text */
+  .bottom-left {
+	position: absolute;
+	top: 40%;
+	left: 25%;
+  }
+  
+  /* Top left text */
+  .top-left {
+	position: absolute;
+	top: 8px;
+	left: 16px;
+  }
+  
+  /* Top right text */
+  .top-right {
+	position: absolute;
+	top: 8px;
+	right: 16px;
+  }
+  
+  /* Bottom right text */
+  .bottom-right {
+	position: absolute;
+	bottom: 8px;
+	right: 16px;
+  }
+  
+  /* Centered text */
+  .centered {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
