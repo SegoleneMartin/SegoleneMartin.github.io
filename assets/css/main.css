@@ -23,6 +23,7 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
+	color: inherit;
 	vertical-align: baseline;}
 
 article, aside, details, figcaption, figure,
@@ -33,10 +34,15 @@ body {
 	line-height: 1;
 	font-size: 10pt;
 	text-align: justify;
+	color: inherit;
 }
 
 ol, ul {
-	list-style: none;
+	list-style:circle;
+	text-align: left;
+	line-height: 1;
+	color: #b0adad;
+	font-size: inherit;
 }
 
 blockquote, q {
@@ -1330,11 +1336,11 @@ input, select, textarea {
 		}
 
 	body, input, textarea, select {
-		font-family: 'Helvetica', sans-serif;
-		font-weight: 100;
+		font-family: 'Gill Sans', serif;
+		font-weight: 0;
 		color: #393939;
 		font-size: 18pt;
-		line-height: 1.25em;
+		line-height: 1.2em;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1370,9 +1376,8 @@ input, select, textarea {
 		}
 
 	strong, body, h1, h2, h3, h4, h5, h6 {
-		font-weight: 300;
+		font-weight: 0;
 		color: #777575;
-		letter-spacing: -0.010em;
 	}
 
 	b {
@@ -1394,7 +1399,7 @@ input, select, textarea {
 
 	h3, h4, h5, h6 {
 		font-weight: 350;
-		font-size: 1.25em;
+		font-size: 1.45em;
 		letter-spacing: -0.015em;
 	}
 
@@ -1449,7 +1454,9 @@ input, select, textarea {
 
 	p, ul, ol, dl, table, blockquote, form {
 		margin-bottom: 2em;
-	}
+		font-family: 'Gill Sans', serif;
+		font-size: inherit;
+		}
 
 /* Table */
 
@@ -1467,7 +1474,7 @@ input, select, textarea {
 
 		table.default th {
 			text-align: left;
-			font-weight: 400;
+			font-weight: 10;
 			padding: 0.5em 1em 0.5em 1em;
 		}
 
@@ -1703,6 +1710,8 @@ input, select, textarea {
 
 		ul li {
 			padding-left: 0.5em;
+			line-height: 1.1em;
+			font-weight: 100;
 		}
 
 	ol {
@@ -1713,6 +1722,8 @@ input, select, textarea {
 		ol li {
 			padding-left: 0.25em;
 		}
+
+
 
 /* Actions */
 
@@ -1874,7 +1885,7 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
-		width: 60em;
+		width: 58em;
 		margin: 0 auto;
 		min-height: 100vh;
 		max-width: 100%;
@@ -1988,7 +1999,7 @@ input, select, textarea {
 			margin-bottom: 0;
 			position: relative;
 			padding: 3.5em 2.5em 2.5em 2.5em;
-			width: 100%;
+			width: 110%;
 		}
 
 			#main > .panel.inactive {
@@ -2005,7 +2016,7 @@ input, select, textarea {
 
 			#main > .panel.intro {
 				padding: 0;
-				height: 28em;
+				height: 43em;
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
@@ -2123,9 +2134,11 @@ input, select, textarea {
 					}
 
 					#main > .panel.intro header p {
-						letter-spacing: -0.015em;
-						font-size: 1.25em;
+						font-size: 1.05em;
 						margin: 0.25em 0 0 0;
+						font-family: 'Gill Sans', serif;
+						font-weight: 100;
+
 					}
 
 				@media screen and (max-width: 980px) {
@@ -2278,7 +2291,7 @@ input, select, textarea {
   .bottom-left {
 	position: absolute;
 	top: 40%;
-	left: 25%;
+	left: 15%;
   }
   
   /* Top left text */
