@@ -2285,6 +2285,7 @@ input, select, textarea {
 	position: relative;
 	text-align: left;
 	color: black;
+	width: 100%;
   }
   
   /* Bottom left text */
