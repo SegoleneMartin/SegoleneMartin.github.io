@@ -1314,13 +1314,13 @@ input, select, textarea {
 	}
 
 	body {
-		background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("images/bg.jpg");
-		background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("images/bg.jpg");
-		background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("images/bg.jpg");
-		background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("images/bg.jpg");
+		/* background-image: url("images/overlay.png"), -moz-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("images/fond.jpg");
+		background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("images/fond.jpg");
+		background-image: url("images/overlay.png"), -ms-linear-gradient(60deg, rgba(255, 165, 150, 0.5) 5%, rgba(0, 228, 255, 0.35)), url("images/fond.jpg");  */
+		background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(163, 167, 187, 0.607) 5%, rgba(188, 167, 185, 0.384));
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
-		background-attachment: fixed;
+		background-attachment: auto;
 		overflow-y: scroll;
 	}
 
@@ -1377,7 +1377,7 @@ input, select, textarea {
 
 	strong, body, h1, h2, h3, h4, h5, h6 {
 		font-weight: 0;
-		color: #777575;
+		color: #7d7d7d;
 	}
 
 	b {
@@ -1386,21 +1386,22 @@ input, select, textarea {
 
 	h1 {
 		font-size: 2.4em;
-		color: #2d2d2d;
-		letter-spacing: -0.015em;
+		color: #7d7d7d;
+		letter-spacing: -0.0em;
 	}
 
 	h2 {
 		font-weight: 350;
 		font-size: 1.8em;
-		color: #2d2d2d;
-		letter-spacing: -0.015em;
+		color: #7d7d7d;
+		letter-spacing: -0.0em;
 	}
 
 	h3, h4, h5, h6 {
 		font-weight: 350;
 		font-size: 1.45em;
-		letter-spacing: -0.015em;
+		letter-spacing: -0.0em;
+		color: #7d7d7d;
 	}
 
 	@media screen and (max-width: 736px) {
@@ -1456,6 +1457,7 @@ input, select, textarea {
 		margin-bottom: 2em;
 		font-family: 'Gill Sans', serif;
 		font-size: inherit;
+		color: #7d7d7d;
 		}
 
 /* Table */
@@ -1553,8 +1555,9 @@ input, select, textarea {
 	}
 
 		header > p {
+			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 			margin: 0.5em 0 0 0;
-			color: #aaa;
+			color: #7d7d7d;
 		}
 
 		@media screen and (max-width: 736px) {
@@ -2134,9 +2137,9 @@ input, select, textarea {
 					}
 
 					#main > .panel.intro header p {
-						font-size: 1.05em;
+						font-size: 1.0em;
 						margin: 0.25em 0 0 0;
-						font-family: 'Gill Sans', serif;
+						font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 						font-weight: 100;
 
 					}
