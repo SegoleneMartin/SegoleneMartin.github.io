@@ -19,7 +19,7 @@ canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
-	padding: 0;
+	padding: 0em;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
@@ -1888,11 +1888,11 @@ input, select, textarea {
 /* Wrapper */
 
 	#wrapper {
-		width: 58em;
+		width: 63em;
 		margin: 0 auto;
 		min-height: 100vh;
 		max-width: 100%;
-		padding: 4em 0;
+		padding: 0em 0;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -1908,7 +1908,7 @@ input, select, textarea {
 		-moz-justify-content: center;
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
-		justify-content: center;
+		justify-content: left;
 		-moz-transition: opacity 1s ease-in-out;
 		-webkit-transition: opacity 1s ease-in-out;
 		-ms-transition: opacity 1s ease-in-out;
@@ -1922,7 +1922,7 @@ input, select, textarea {
 		@media screen and (max-width: 1280px) {
 
 			#wrapper {
-				padding: 3em 0;
+				padding: 3em 3em;
 				max-width: calc(100% - 6em);
 			}
 
@@ -1931,7 +1931,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			#wrapper {
-				padding: 1.5em 0;
+				padding: 1.5em 1.5em;
 				max-width: calc(100% - 8em);
 			}
 
@@ -1940,7 +1940,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#wrapper {
-				padding: 1em 0;
+				padding: 1em 1em;
 				max-width: calc(100% - 2em);
 			}
 
@@ -1949,7 +1949,7 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			#wrapper {
-				padding: 1em 0;
+				padding: 1em 1em;
 				max-width: 100%;
 			}
 
@@ -2002,7 +2002,7 @@ input, select, textarea {
 			margin-bottom: 0;
 			position: relative;
 			padding: 3.5em 2.5em 2.5em 2.5em;
-			width: 110%;
+			width: 100%;
 		}
 
 			#main > .panel.inactive {
@@ -2018,7 +2018,7 @@ input, select, textarea {
 			}
 
 			#main > .panel.intro {
-				padding: 0;
+				padding: 1em;
 				height: 50em;
 				display: -moz-flex;
 				display: -webkit-flex;
@@ -2134,6 +2134,13 @@ input, select, textarea {
 					#main > .panel.intro header h1 {
 						line-height: 1.25em;
 						margin-bottom: 0;
+					}
+
+					#main > .panel.intro header h4 {
+						line-height: 1.25em;
+						font-size: 0.8em;
+						margin-bottom: 0;
+						color: #000000;
 					}
 
 					#main > .panel.intro header p {
@@ -2268,17 +2275,17 @@ input, select, textarea {
 	a /* Liens par défaut (non survolés) */
 	{
 	   text-decoration: none;
-	   color: #777777; /*rgba(10,100,160, 0.9)*/
+	   color: #007bff; /*rgba(10,100,160, 0.9)*/
 	}
 	
 	a:hover /* Apparence au survol des liens */
 	{
-	   color: black;
+	   color: #0056b3;
 	}
 	
 	a:visited /* Quand le visiteur a déjà vu la page concernée */
 	{
-	    color: #777777; /* Appliquer une couleur grise */
+	    color: #0056b3; /* Appliquer une couleur grise */
 	}
 	
 
@@ -2321,7 +2328,31 @@ input, select, textarea {
   /* Centered text */
   .centered {
 	position: absolute;
-	top: 20%;
+	top: 27%;
 	left: 50%;
 	transform: translate(-50%, -50%);
   }
+
+#news-banner {
+    background-color: #e4e3e3; /* Light background */
+    color: #333; /* Dark text for contrast */
+    padding: 10px 20px; /* Add some spacing */
+    border-left: 5px solid #007bff; /* Accent border */
+    font-size: 1em; /* Adjust font size */
+    text-align: left; /* Center the content */
+    font-family: Arial, sans-serif; /* Ensure a clean font */
+}
+
+#news-banner p {
+    margin: 0; /* Remove default margin */
+}
+
+#news-banner a {
+    color: #007bff; /* Link color */
+    text-decoration: underline; /* Underline links */
+}
+
+#news-banner a:hover {
+    color: #0056b3; /* Darker link on hover */
+}
+
