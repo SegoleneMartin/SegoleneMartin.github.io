@@ -2013,7 +2013,7 @@ input, select, textarea {
 			@media screen and (max-width: 736px) {
 
 				#main > .panel {
-					padding: 2em 1.5em 1.5em 1.5em;
+					padding: 2em 1em 1.5em 1em;
 				}
 
 			}
@@ -2181,7 +2181,7 @@ input, select, textarea {
 					}
 
 					#main > .panel.intro header {
-						padding: 2.75em 2em 2.5em 2em;
+						padding: 2.5em 1em 2.25em 1em;
 					}
 
 						#main > .panel.intro header p {
@@ -2391,10 +2391,15 @@ input, select, textarea {
 	#nav {
 		display: grid;
 		grid-template-columns: repeat(3, minmax(0, 1fr));
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0;
+		z-index: 10;
 		gap: 0;
 		height: 2.75em;
 		padding: 0.4em 0 0.7em 0;
 		width: 100%;
+		background-image: linear-gradient(60deg, rgba(163, 167, 187, 0.95) 5%, rgba(188, 167, 185, 0.95));
 	}
 
 	#nav a {
