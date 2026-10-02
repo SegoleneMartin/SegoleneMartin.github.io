@@ -2398,22 +2398,24 @@ input, select, textarea {
 		z-index: 10;
 		gap: 0;
 		height: 2.75em;
-		padding: 0.4em 0 0.7em 0;
+		padding: 0;
 		width: 100vw;
 		background-image: linear-gradient(60deg, rgba(163, 167, 187, 0.95) 5%, rgba(188, 167, 185, 0.95));
 	}
 
 	#wrapper {
-		padding-top: 3.4em;
+		padding-top: 4.4em;
 	}
 
 	#nav a {
-		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 		float: none;
 		top: 0;
 		color: #ffffff;
 		min-width: 0;
-		height: auto;
+		height: 100%;
 		margin: 0;
 		padding-right: 0.15em;
 		padding-left: 0.15em;
@@ -2424,7 +2426,7 @@ input, select, textarea {
 	}
 
 	#nav a:after {
-		bottom: -0.95em;
+		bottom: 0;
 	}
 
 	.contact-links {
