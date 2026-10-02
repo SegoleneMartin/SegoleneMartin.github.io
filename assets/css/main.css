@@ -1788,6 +1788,7 @@ input, select, textarea {
 
 		#nav a {
 			position: relative;
+			top: 0.4em;
 			display: inline-block;
 			padding-right: 15px;
 			padding-left: 15px;
@@ -1796,7 +1797,7 @@ input, select, textarea {
 			color: #ffffff;
 			height: 1em;
 			line-height: 0.9em;
-			font-size: 2.5em;
+			font-size: 2.0em;
 			margin: 0 0.05em 0 0.05em;
 			opacity: 0.45;
 			outline: 0;
@@ -2356,3 +2357,78 @@ input, select, textarea {
     color: #0056b3; /* Darker link on hover */
 }
 
+.contact-links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 0.6em 1.5em;
+}
+
+.contact-links a {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.35em;
+	text-decoration: none;
+}
+
+.home-columns {
+	display: flex;
+	gap: 2em;
+	width: 100%;
+}
+
+.home-column {
+	flex: 1;
+	min-width: 0;
+}
+
+.panel-content {
+	width: 90%;
+}
+
+@media screen and (max-width: 736px) {
+	#nav {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 0.4em;
+		height: auto;
+		padding: 0.75em 0;
+	}
+
+	#nav a {
+		float: none;
+		top: 0;
+		font-size: 1.2em;
+		padding-right: 0.35em;
+		padding-left: 0.35em;
+		line-height: 1.2em;
+	}
+
+	.contact-links {
+		gap: 0.5em 1em;
+		font-size: 0.95em;
+	}
+
+	.home-columns {
+		display: block;
+	}
+
+	.home-column {
+		width: 100%;
+		margin-bottom: 2em;
+	}
+
+	.panel-content {
+		width: 100%;
+	}
+
+	#news-banner {
+		padding: 0.8em 1em;
+	}
+
+	#news-banner ul {
+		padding-left: 1.2em;
+	}
+}
