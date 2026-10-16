@@ -2020,7 +2020,7 @@ input, select, textarea {
 
 			#main > .panel.intro {
 				padding: 1em;
-				height: 50em;
+				height: auto;
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
